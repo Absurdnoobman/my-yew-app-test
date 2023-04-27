@@ -2,7 +2,7 @@ use yew::prelude::*;
 
 #[function_component]
 fn App() -> Html{
-    let h_one : String = String::from("Helloworld");
+    let h_one : String = String::from("Hello world");
 
     html! {
         <div>
