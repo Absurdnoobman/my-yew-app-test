@@ -6,7 +6,7 @@ fn App() -> Html{
 
     html! {
         <div>
-            <h1 name="hi" style="color:red;"> {h_one} </h1>
+            <h1 name="hi" title="Hi i'm kolo"> {h_one} </h1>
         </div>
     }
 }
