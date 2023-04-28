@@ -9,8 +9,12 @@ fn App() -> Html{
     let text_kelvin: String = String::from("Kelvin");
 
     // Input
-    let input_c : i32 = 30;
-    let str_input_c : String = input_c.to_string();
+    let input_c : f32 = 30.0;
+    let input_f : f32 = 1.8 * input_c + 32.0;
+    let input_k : f32 = input_c + 273.15;
+    let str_result_c : String = input_c.to_string();
+    let str_result_f : String = input_f.to_string();
+    let str_result_k : String = input_k.to_string();
 
     html! {
         <div style="text-align: center;">
@@ -22,17 +26,19 @@ fn App() -> Html{
                     <h2>
                         {text_celsius}
                     </h2>
-                    <p> {str_input_c} </p>
+                    <p class="degree"> { str_result_c } </p>
                 </div>
                 <div class="flex-child">
                     <h2>
                         {text_fahrenheit}
                     </h2>
+                    <p class="degree"> { str_result_f } </p>
                 </div>
                 <div class="flex-child">
                     <h2>
                         {text_kelvin}
                     </h2>
+                    <p class="degree"> { str_result_k } </p>
                 </div>
             </div>
         </div>
