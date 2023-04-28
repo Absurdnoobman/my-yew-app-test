@@ -3,14 +3,28 @@
             font-family:Arial, Helvetica, sans-serif;
             text-align: center;
         }
+        .flex-container {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 50pt;
+        }
+        .flex-child {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 50px;
+            align-self: center;
+            flex-basis: 100px;
+        }
     </style>
     
         <meta charset="utf-8">
-        <title> Web site </title>
+        <title> Temperature Converter </title>
     
-<link rel="preload" href="/my-yew-app-4e0e96929dd96609_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/my-yew-app-4e0e96929dd96609.js"></head>
-<body><script type="module">import init from '/my-yew-app-4e0e96929dd96609.js';init('/my-yew-app-4e0e96929dd96609_bg.wasm');</script><script>(function () {
+<link rel="preload" href="/my-yew-app-d1666080f1efffd7_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/my-yew-app-d1666080f1efffd7.js"></head>
+<body><script type="module">import init from '/my-yew-app-d1666080f1efffd7.js';init('/my-yew-app-d1666080f1efffd7_bg.wasm');</script><script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
