@@ -654,7 +654,7 @@ dependencies = [
 
 [[package]]
 name = "tracing"
-version = "0.1.38"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf9cf6a813d3f40c88b0b6b6f29a5c95c6cdbf97c1f9cc53fb820200f5ad814d"
 dependencies = [
